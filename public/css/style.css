@@ -118,7 +118,27 @@ nav .wrapper {
   width: 50vw;
 }
 
-.alter,
-.side {
+/* Styling of the grid inside */
+.alter {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  gap: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 11rem;
+}
+
+.text h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  color: hsl(212, 27%, 19%);
+  font-size: 5rem;
+}
+.text p {
+  font-family: "Barlow", serif;
+  font-size: 2rem;
 }
