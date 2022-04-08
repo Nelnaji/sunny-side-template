@@ -1,0 +1,87 @@
+@media (max-width: 1024px) {
+  html {
+    font-size: 58%;
+  }
+  .text {
+    gap: 2rem;
+  }
+  .text h3 {
+    font-size: 4rem;
+  }
+  .grid-img {
+    height: 100%;
+  }
+  .second {
+    padding: 5rem 10rem;
+  }
+  .second h3 {
+    font-size: 2.4rem;
+  }
+  .second p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  .testi-text {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 56%;
+  }
+  .text {
+    gap: 1.4rem;
+  }
+  .text h3 {
+    font-size: 3rem;
+  }
+  .text p {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+  }
+  .text a {
+    font-size: 1.8rem;
+  }
+
+  .second {
+    gap: 2rem;
+    padding: 3rem 8rem;
+  }
+  .second h3 {
+    font-size: 2.3rem;
+  }
+  .second p {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+
+  .testimonials {
+    gap: 5rem;
+  }
+  .testimonials h2 {
+    padding-top: 12rem;
+  }
+  .testi-job {
+    padding-bottom: 12rem;
+  }
+  .testiwrap {
+    padding: 0rem 12rem;
+    gap: 4rem;
+  }
+
+  .testi-text {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .grid-6 {
+    grid-template: repeat(6, 1fr) / 1fr;
+  }
+  .alter {
+    width: 100vw;
+  }
+
+  .pictures-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

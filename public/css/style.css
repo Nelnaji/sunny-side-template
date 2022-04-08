@@ -53,7 +53,10 @@ nav .wrapper {
   gap: 5rem;
   align-items: center;
 }
-
+.logo {
+  filter: invert(100%) sepia(96%) saturate(12%) hue-rotate(216deg)
+    brightness(104%) contrast(100%);
+}
 .wrapper a {
   font-size: 1.5rem;
   color: hsl(0, 0%, 100%);
@@ -117,12 +120,12 @@ nav .wrapper {
 .alter:nth-child(4) {
   grid-area: 2 / 2 / 3 / 3;
 }
-.alter:nth-child(5) {
-  background: url(../images/desktop/image-graphic-design.jpg);
-  background-size: contain;
+.graphicd {
+  background: url(../images/desktop/image-graphic-design.jpg) center center;
+  background-size: cover;
 }
-.alter:nth-child(6) {
-  background: url(../images/desktop/image-photography.jpg);
+.photo {
+  background: url(../images/desktop/image-photography.jpg) center center;
   background-size: cover;
 }
 
@@ -132,18 +135,27 @@ nav .wrapper {
 /* Styling of the inside of first grid*/
 .alter {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex-direction: column;
   gap: 2rem;
+}
+.altern {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .text {
   gap: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 11rem;
+  width: 70%;
+  margin: auto;
 }
-
+.side .text {
+  display: flex;
+  justify-content: flex-end;
+}
 .text h3 {
   font-family: "Fraunces", serif;
   font-weight: 800;
@@ -184,6 +196,39 @@ nav .wrapper {
   color: hsl(198, 62%, 26%);
 }
 
+/*styling of learn more and hovering state*/
+.text a {
+  position: relative;
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  color: hsl(212, 27%, 19%);
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+.text a::after {
+  left: -0.5rem;
+  bottom: 0;
+  position: absolute;
+  content: "";
+  width: 16rem;
+  height: 0.7rem;
+  border-radius: 1rem;
+  z-index: -1;
+  transition: 0.5s;
+}
+.learn::after {
+  background-color: hsla(51, 100%, 49%, 0.5);
+}
+.learn2::after {
+  background-color: hsl(7, 99%, 70%, 0.5);
+}
+.learn:hover::after {
+  background-color: hsla(51, 100%, 49%);
+}
+.learn2:hover::after {
+  background-color: hsl(7, 99%, 70%);
+}
 /* testimonials styling*/
 
 .testimonials {
@@ -253,10 +298,47 @@ nav .wrapper {
   font-weight: 800;
   color: hsl(212, 27%, 19%);
   font-size: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1.6rem;
 }
 /* styling of the footer */
 
 footer {
-  background-color: hsl(168, 34%, 41%);
+  background-color: hsl(167, 44%, 70%);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  color: hsl(168, 34%, 41%);
+}
+
+.footer-logo {
+  filter: invert(41%) sepia(12%) saturate(1936%) hue-rotate(118deg)
+    brightness(88%) contrast(81%);
+  padding-top: 7rem;
+}
+.footwrap {
+  display: flex;
+  gap: 5rem;
+  color: hsl(168, 34%, 41%);
+  font-size: 2rem;
+}
+
+.foot-link:link,
+.foot-link:visited {
+  color: hsl(168, 34%, 41%);
+}
+
+.footwrap2 {
+  padding-top: 6rem;
+  display: flex;
+  gap: 3rem;
+}
+.attribution {
+  font-size: 1.4rem;
+  padding-bottom: 2rem;
+}
+.attribution a:visited,
+.attribution a:link {
+  color: hsl(168, 34%, 41%);
 }
