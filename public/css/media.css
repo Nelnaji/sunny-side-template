@@ -92,9 +92,13 @@
 }
 
 @media (max-width: 320px) {
+
+  .alter:nth-child(2) {
+    grid-row-start: 1;
+  }
+
   .grid-6 {
-    grid-template-columns: repeat(auto-fill, minmax(100vw, 1fr));
-    overflow: hidden;
+    grid-template-columns: 1fr !important;
   }
 
   .hamburger {
@@ -108,6 +112,12 @@
   .title h1 {
     font-size: 4rem;
   }
+
+  .graphicd,
+  .photo {
+    height: 100vw;
+  }
+
 
   nav .wrapper {
     display: none;
@@ -150,5 +160,23 @@
 
   .officer {
     margin-bottom: 8rem;
+  }
+
+
+  .text {
+    padding: 3rem 0rem;
+  }
+
+  .second {
+    padding: 3rem 6rem;
+  }
+
+  .second h3 {
+    font-size: 2.3rem;
+  }
+
+  .second p {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
   }
 }
