@@ -16,9 +16,11 @@
 html {
   font-size: 62.5%;
 }
+
 body {
   font-family: "Barlow", sans-serif;
 }
+
 h1,
 h2,
 h3 {
@@ -28,6 +30,7 @@ h3 {
 a {
   text-decoration: none;
 }
+
 /* *********************************
 ************************************
 ********* Nav and hero design*******
@@ -42,21 +45,27 @@ header {
   flex-direction: column;
 }
 
+.hamburger {
+  display: none;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   padding: 3.5rem;
   align-items: center;
 }
+
 nav .wrapper {
   display: flex;
   gap: 5rem;
   align-items: center;
 }
+
 .logo {
-  filter: invert(100%) sepia(96%) saturate(12%) hue-rotate(216deg)
-    brightness(104%) contrast(100%);
+  filter: invert(100%) sepia(96%) saturate(12%) hue-rotate(216deg) brightness(104%) contrast(100%);
 }
+
 .wrapper a {
   font-size: 1.5rem;
   color: hsl(0, 0%, 100%);
@@ -73,6 +82,7 @@ nav .wrapper {
   border-radius: 5rem;
   transition: 0.5s;
 }
+
 .wrapper a:last-child:focus,
 .wrapper a:last-child:hover {
   color: hsl(0, 0%, 100%);
@@ -111,19 +121,24 @@ nav .wrapper {
 .alter:nth-child(1) {
   grid-area: 1 / 1 / 2 / 2;
 }
+
 .alter:nth-child(2) {
   grid-area: 1 / 2 / 2 / 3;
 }
+
 .alter:nth-child(3) {
   grid-area: 2 / 1 / 3 / 2;
 }
+
 .alter:nth-child(4) {
   grid-area: 2 / 2 / 3 / 3;
 }
+
 .graphicd {
   background: url(../images/desktop/image-graphic-design.jpg) center center;
   background-size: cover;
 }
+
 .photo {
   background: url(../images/desktop/image-photography.jpg) center center;
   background-size: cover;
@@ -132,6 +147,7 @@ nav .wrapper {
 .grid-img {
   width: 50vw;
 }
+
 /* Styling of the inside of first grid*/
 .alter {
   display: flex;
@@ -139,11 +155,13 @@ nav .wrapper {
   flex-direction: column;
   gap: 2rem;
 }
+
 .altern {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
+
 .text {
   gap: 5rem;
   display: flex;
@@ -152,16 +170,19 @@ nav .wrapper {
   width: 70%;
   margin: auto;
 }
+
 .side .text {
   display: flex;
   justify-content: flex-end;
 }
+
 .text h3 {
   font-family: "Fraunces", serif;
   font-weight: 800;
   color: hsl(212, 27%, 19%);
   font-size: 5rem;
 }
+
 .text p {
   font-family: "Barlow", serif;
   font-size: 2rem;
@@ -181,6 +202,7 @@ nav .wrapper {
   font-weight: 800;
   font-size: 3.6rem;
 }
+
 .second p {
   font-family: "Barlow", serif;
   font-size: 2rem;
@@ -191,6 +213,7 @@ nav .wrapper {
 .graphicd p {
   color: hsl(167, 40%, 24%);
 }
+
 .photo h3,
 .photo p {
   color: hsl(198, 62%, 26%);
@@ -206,6 +229,7 @@ nav .wrapper {
   font-size: 2rem;
   margin-bottom: 5rem;
 }
+
 .text a::after {
   left: -0.5rem;
   bottom: 0;
@@ -217,18 +241,23 @@ nav .wrapper {
   z-index: -1;
   transition: 0.5s;
 }
+
 .learn::after {
   background-color: hsla(51, 100%, 49%, 0.5);
 }
+
 .learn2::after {
   background-color: hsl(7, 99%, 70%, 0.5);
 }
+
 .learn:hover::after {
   background-color: hsla(51, 100%, 49%);
 }
+
 .learn2:hover::after {
   background-color: hsl(7, 99%, 70%);
 }
+
 /* testimonials styling*/
 
 .testimonials {
@@ -238,12 +267,14 @@ nav .wrapper {
   align-items: center;
   gap: 7rem;
 }
+
 .testiwrap {
   display: flex;
   padding: 0rem 18rem;
   justify-content: center;
   gap: 6rem;
 }
+
 .profile {
   display: flex;
   flex-direction: column;
@@ -261,6 +292,7 @@ nav .wrapper {
   padding-top: 18rem;
   font-size: 2.5rem;
 }
+
 /* styling testimonials pictures */
 
 .profile img {
@@ -268,6 +300,7 @@ nav .wrapper {
   border-radius: 50%;
   margin-bottom: 5rem;
 }
+
 .testi-text {
   font-family: "Barlow", serif;
   font-size: 2rem;
@@ -275,12 +308,14 @@ nav .wrapper {
   padding-bottom: 5rem;
   color: hsl(213, 9%, 39%);
 }
+
 .testi-job {
   font-family: "Barlow", serif;
   color: hsl(210, 4%, 67%);
   font-size: 1.6rem;
   padding-bottom: 18rem;
 }
+
 /* Styling of the second grid*/
 
 .pictures-grid {
@@ -300,6 +335,7 @@ nav .wrapper {
   font-size: 2rem;
   padding-bottom: 1.6rem;
 }
+
 /* styling of the footer */
 
 footer {
@@ -313,10 +349,10 @@ footer {
 }
 
 .footer-logo {
-  filter: invert(41%) sepia(12%) saturate(1936%) hue-rotate(118deg)
-    brightness(88%) contrast(81%);
+  filter: invert(41%) sepia(12%) saturate(1936%) hue-rotate(118deg) brightness(88%) contrast(81%);
   padding-top: 7rem;
 }
+
 .footwrap {
   display: flex;
   gap: 5rem;
@@ -334,10 +370,12 @@ footer {
   display: flex;
   gap: 3rem;
 }
+
 .attribution {
   font-size: 1.4rem;
   padding-bottom: 2rem;
 }
+
 .attribution a:visited,
 .attribution a:link {
   color: hsl(168, 34%, 41%);
