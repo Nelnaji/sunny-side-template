@@ -1,3 +1,12 @@
+@media (max-width: 1130px) {
+  html {
+    font-size: 59%;
+  }
+  .text h3 {
+    font-size: 4.2rem;
+  }
+}
+
 @media (max-width: 1024px) {
   html {
     font-size: 58%;
@@ -33,9 +42,19 @@
   }
 }
 
+@media (max-width: 913px) {
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 56%;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  nav .wrapper {
+    display: none;
   }
 
   .text {
@@ -91,18 +110,13 @@
   }
 }
 
-@media (max-width: 320px) {
-
+@media (max-width: 412px) {
   .alter:nth-child(2) {
     grid-row-start: 1;
   }
 
   .grid-6 {
     grid-template-columns: 1fr !important;
-  }
-
-  .hamburger {
-    display: block;
   }
 
   .title {
@@ -116,11 +130,6 @@
   .graphicd,
   .photo {
     height: 100vw;
-  }
-
-
-  nav .wrapper {
-    display: none;
   }
 
   .grid-img {
@@ -161,7 +170,6 @@
   .officer {
     margin-bottom: 8rem;
   }
-
 
   .text {
     padding: 3rem 0rem;
