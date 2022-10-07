@@ -43,6 +43,10 @@
 }
 
 @media (max-width: 913px) {
+  .testiwrap {
+    flex-direction: column;
+    padding: 0rem 2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -109,8 +113,16 @@
     font-size: 1.5rem;
   }
 }
+@media (max-width: 670px) {
+  .title {
+    text-align: center;
+  }
+  .pictures-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-@media (max-width: 412px) {
+@media (max-width: 500px) {
   .alter:nth-child(2) {
     grid-row-start: 1;
   }
