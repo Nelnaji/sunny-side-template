@@ -50,6 +50,9 @@
 }
 
 @media (max-width: 768px) {
+  .title {
+    text-align: center;
+  }
   html {
     font-size: 56%;
   }
@@ -114,9 +117,6 @@
   }
 }
 @media (max-width: 670px) {
-  .title {
-    text-align: center;
-  }
   .pictures-grid {
     grid-template-columns: repeat(2, 1fr);
   }
